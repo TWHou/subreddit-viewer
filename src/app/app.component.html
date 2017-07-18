@@ -1,7 +1,11 @@
-<div style="text-align:center">
-  <nav>
-    <a routerLink="/subreddit" routerLinkActive="active">/r/{{subreddit}}</a>
-    <a routerLink="/favorites" routerLinkActive="active">Favorites</a>
-  </nav>
-  <router-outlet></router-outlet>
-</div>
+<nav>
+  <a routerLink="/subreddit" routerLinkActive="active">
+    <i class="fa fa-reddit-alien" aria-hidden="true"></i>
+    /r/{{subreddit}}
+  </a>
+  <a routerLink="/favorites" routerLinkActive="active">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+    Favorites({{favorites}})
+  </a>
+</nav>
+<router-outlet></router-outlet>

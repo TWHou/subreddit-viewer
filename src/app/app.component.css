@@ -1,0 +1,22 @@
+nav {
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 2px #eee;
+  background-color: #fff;
+  z-index: 200;
+}
+a {
+  display: inline-block;
+  padding: .5rem;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #57a2e4;
+  text-decoration: none;
+}
+a.active {
+  color: #fff;
+  background-color: #57a2e4;
+}

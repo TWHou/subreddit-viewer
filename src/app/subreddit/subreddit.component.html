@@ -1,5 +1,9 @@
-<div>
-  <post></post>
-  <post></post>
-  <post></post>
+<div class="container">
+  <div *ngIf="posts.length === 0" class="empty">
+    No favorites yet.
+  </div>
+  <post *ngFor="let post of posts"
+    [post]="post"
+    (onDelete)="onDelete($event)"
+  ></post>
 </div>
